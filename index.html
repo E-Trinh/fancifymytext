@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<title>Fancify Shamcify</title>
-
 		<script src="./fancifymytext.js" defer></script>
 		<link rel="stylesheet" href="./styles.css">
 		
@@ -11,15 +10,24 @@
 	<body>
 		<h1>Fancify my Text</h1>
 		<fieldset>
-			<label>Text</label>				<textarea id="text" rows="4" cols="30"></textarea>
+			<div class="vertical">
+				<label for="text">Text</label>				
+				<textarea id="text" rows="4" cols="30" name="text"></textarea>
+			</div>
 		</fieldset>
-		<fieldset>				
-			<button id="bigger" >Bigger</button>
-			<button id="moo">Moo</button>
-			<input id="fancy" type="radio" name="styling"" value="fancy">
-			<label for="fancy">FancyShmancy</label>
-			<input id="boring" type="radio" name="styling" value="boring">
-			<label for="boring">BoringBetty</label>
+		<fieldset>			
+			<div class="horizontal">
+				<button id="bigger" >Bigger!</button>
+				<button id="moo">Moo</button>
+			</div>	
+			<div class="horizontal">
+				<input id="fancy" type="radio" name="styling" value="fancy">
+				<label for="fancy">FancyShmancy</label>
+			</div>
+			<div class="horizontal">
+				<input id="boring" type="radio" name="styling" value="boring">
+				<label for="boring">BoringBetty</label>
+			</div>
 		</fieldset>
 	</body>
 </html>
